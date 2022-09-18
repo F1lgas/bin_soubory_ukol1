@@ -30,10 +30,10 @@ namespace bin_soubory_ukol1
             {
                 if (br.ReadChar() == '?')
                 {
-                    MessageBox.Show("První ? je na pozici " + br.BaseStream.Position);
+                    MessageBox.Show("První '?' je na pozici " + br.BaseStream.Position);
                     br.BaseStream.Position--;
                     br.BaseStream.Position--;
-                    MessageBox.Show("Znak před ním je " + br.ReadChar());
+                    MessageBox.Show("Znak před ním je " + "'" + br.ReadChar() + "'");
                     break;
                 }
             }
